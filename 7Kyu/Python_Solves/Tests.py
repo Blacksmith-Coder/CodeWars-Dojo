@@ -2,6 +2,7 @@ import unittest
 import SpanishSolve
 import FunctionalAddition
 import ScrollingText
+import Prime
 
 
 class MainTest(unittest.TestCase):
@@ -25,7 +26,15 @@ class MainTest(unittest.TestCase):
         self.assertEqual(ScrollingText.scrolling_text("abc"), ["ABC", "BCA", "CAB"])
         print(ScrollingText.scrolling_text("codewars"))
         self.assertEqual(ScrollingText.scrolling_text("codewars"), ["CODEWARS", "ODEWARSC", "DEWARSCO", "EWARSCOD",
-                                                                    "WARSCODE", "ARSCODEW" "RSCODEWA", "SCODEWAR"])
+                                                                    "WARSCODE", "ARSCODEW", "RSCODEWA", "SCODEWAR"])
+
+    def test_prime(self):
+        self.assertEqual(Prime.is_prime(3), True)
+        print(Prime.is_prime(3))
+        self.assertEqual(Prime.is_prime(19), True)
+        print(Prime.is_prime(19))
+        self.assertEqual(Prime.is_prime(12), False)
+        print(Prime.is_prime(12))
 
 
 if __name__ == '__main__':
