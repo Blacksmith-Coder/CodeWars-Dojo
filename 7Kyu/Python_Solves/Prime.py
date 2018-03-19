@@ -62,7 +62,7 @@ def lrac2(n):
         rac1 = rac2
 
 
-def premiers(n, p=[ 2, 3, 5]):
+def premiers(n, p=[2, 3, 5]):
     """Retourne la liste des nombres premiers <= n (méthode=division)"""
     k = p[-1]+2
     if n < k:
